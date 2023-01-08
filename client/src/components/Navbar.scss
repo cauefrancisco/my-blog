@@ -1,0 +1,127 @@
+
+
+.nav{
+    padding: 1vh 0;
+    display: flex;
+    width: 100vw !important;
+    justify-content: space-around;
+    margin: 0 auto !important;
+    height: 8vh;
+    align-items: center;
+    background: linear-gradient( var(--black-light) 80%, var(--black-heavy)) ;
+    // box-shadow: 3px 3px 3px 3px var(--black-light), 3px 3px 3px 3px var(--blue-heavy);
+
+    .menu-icon {
+      // transform: translateX(10000px);
+      z-index: -10;
+    }
+
+    .logo{
+      .linkTitle{
+        text-decoration: none;
+        border: none;
+      }
+      h1{
+        font-size: 3.3rem;
+        color: var(--blue-heavy);
+        cursor: pointer;
+      }
+    }
+
+    .menu{
+      ul{
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+        position: relative;
+          .linksNav{
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: var(--white-heavy);
+
+              &:hover{
+                font-size: 2rem;
+            // color: var(--white-heavy);
+              color: var(--blue-heavy);
+              }
+          }
+          .loginIcons{
+            display: flex;
+            gap: 10px;
+            margin-left: 2vw;
+          }
+          .linksWrite{
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: var(--blue-heavy);
+              &:hover{
+                text-decoration: none;
+                font-size: 2rem;
+              }
+          }
+
+          span{
+            cursor: pointer;
+            padding: 10px;
+            font-size: 1.4rem;
+            color: var(--plain-red);
+            margin-left: 1vw;
+          }
+      }
+  }
+
+    @media (max-width: 600px) {
+      .menu-icon {
+        display: block;
+        position: relative;
+        left: 4vw;
+        z-index: 10;
+        cursor: pointer;
+      }
+
+      .logo{
+        h1{
+          font-size: 2rem;
+        }
+      }
+      .menu {
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        background-color: var(--black-light);
+        width: 0px;
+        height: calc(100vh - 60px);
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+        z-index: 10000000;
+        // transform: translateX(1px);
+        background: linear-gradient( var(--black-medium), var(--black-lighter));
+      }
+    
+      .menu.active {
+        width: 270px;
+      }
+      .menu ul {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .menu ul li {
+        margin-right: unset;
+        margin-top: 22px;
+      }
+    
+      .menu ul a {
+        font-size: 10vw;
+        font-weight: 400;
+        text-decoration: none;
+      }
+    
+      .menu ul a:active {
+        font-size: 10vw;
+        font-weight: 400;
+        text-decoration: none;
+      }
+    }
+
+}
