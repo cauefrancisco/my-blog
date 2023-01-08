@@ -37,29 +37,31 @@ const CreateArticle = () => {
          <ReactQuill theme="snow"  value={value} onChange={setValue} className="quill" />
         </div>
       </div>
+
       <div className="menu">
+
         <div className="item">
           <h1>Publish</h1>
           <span>
-            <b> Satatus: </b> Draft 
+            <b> Status: </b> Draft 
           </span>
           <span>
             <b> Visibility: </b> Public 
           </span>
-          <label htmlFor="file" >Upload image</label>
+          <label className='file' htmlFor="file" >Upload image</label>
           <input type="file" id='file' style={{display:'none'}}/>
           <div className="buttons">
-          <button>Save as a draft</button>
+          <button>Save draft</button>
           <button>Update</button>
           </div>
         </div>
         <div className="item">
           <h1>Category</h1>
           {category.map((cat) =>(
-            <>
-            <input key={cat.id} type="checkbox" name='category' value={cat.name} />
-            <label htmlFor='categories'>{cat.name}</label>
-            </>
+            <div className='tag'>
+            <input className='cat' key={cat.id} type="checkbox" name='category' value={cat.name} />
+            <label className='cat' htmlFor='categories'>{cat.name}</label>
+            </div>
           ))}
         </div>
       </div>
