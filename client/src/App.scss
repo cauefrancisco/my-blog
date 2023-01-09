@@ -29,6 +29,7 @@ body{
   box-sizing: border-box;
   font-family: var(--font-bebas-neue), var(--font-bebas-neue), sans-serif;
   background: linear-gradient(var(--black-light) 45%, var(--black-medium));
+  // background-image: url('./assets/sky.png');
 }
 
 // ********* NAV 
@@ -74,8 +75,8 @@ body{
             box-shadow: 2px 2px 2px 2px var(--black-lighter);
           }
 
-          button{
-            width: 22.8vw;
+          .loginBtn{
+            width: 20vw;
             margin: 0.3rem;
             height: 2.8rem;
             border-radius: 4px;
@@ -143,8 +144,8 @@ body{
             box-shadow: 2px 2px 2px 2px var(--black-lighter);
           }
 
-          button{
-            width: 22.8vw;
+          .registerConfirm{
+            width: 20vw;
             margin: 0.3rem;
             height: 2.8rem;
             border-radius: 4px;
@@ -647,8 +648,8 @@ body{
             padding: 2vh 2vw;
             width: 16rem;
           }
-          button{
-            width: 18rem;
+          .loginBtn{
+            width: 16.5rem;
           }
         }
       }
@@ -664,8 +665,8 @@ body{
             padding: 2vh 2vw;
             width: 16rem;
           }
-          button{
-            width: 18rem;
+          .registerConfirm{
+            width: 16.5rem;
           }
         }
       }
@@ -683,8 +684,8 @@ body{
             padding: 2vh 2vw;
             width: 16rem;
           }
-          button{
-            width: 18rem;
+          .loginBtn{
+            width: 16.5rem;
           }
         }
 
@@ -701,8 +702,8 @@ body{
           padding: 2vh 2vw;
             width: 16rem;
         }
-        button{
-          width: 18rem;
+        .registerConfirm{
+          width: 16.5rem;
         }
       }
     }
@@ -727,8 +728,8 @@ body{
             width: 14rem;
           }
 
-          button{
-            width: 15rem;
+          .loginBtn{
+            width: 14rem;
             margin-top: 1rem;
             height: 2.8rem;
             border-radius: 4px;
@@ -754,8 +755,8 @@ body{
             width: 14rem;
           }
 
-          button{
-            width: 15rem;
+          .registerConfirm{
+            width: 14rem;
             margin-top: 1rem;
             height: 2.8rem;
             border-radius: 4px;

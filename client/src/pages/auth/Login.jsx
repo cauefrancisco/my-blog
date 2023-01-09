@@ -9,7 +9,7 @@ const Login = () => {
         {/* <label htmlFor="username">Username</label> */}
         <input type="text" placeholder='username' name='username' id="username" />
         <input type="password" placeholder='password' id="password" />
-        <button>Enter</button>
+        <button className='loginBtn'>Enter</button>
         <p>This is an Error!</p>
         <span>Don't have an account? <NavLink className='link' to='/register'>Create one</NavLink></span>
       </form>
